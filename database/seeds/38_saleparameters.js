@@ -1,0 +1,201 @@
+exports.seed = function (knex) {
+  // Deletes ALL existing entries
+  return knex("saleparameters")
+    .del()
+    .then(function () {
+      // Inserts seed entries (3 por cada saletypeID del 1 al 6)
+      return knex("saleparameters").insert([
+        // saletypeID = 1
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 30 DAY)"),
+          quota: 100,
+          amount: 5000,
+          days: 30,
+          active: true,
+          userID: 1,
+          saletypeID: 1,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 60 DAY)"),
+          quota: 200,
+          amount: 10000,
+          days: 60,
+          active: true,
+          userID: 1,
+          saletypeID: 1,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 45 DAY)"),
+          quota: 150,
+          amount: 7500,
+          days: 45,
+          active: true,
+          userID: 1,
+          saletypeID: 1,
+        },
+
+        // saletypeID = 2
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 30 DAY)"),
+          quota: 120,
+          amount: 5500,
+          days: 30,
+          active: true,
+          userID: 1,
+          saletypeID: 2,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 60 DAY)"),
+          quota: 220,
+          amount: 10500,
+          days: 60,
+          active: true,
+          userID: 1,
+          saletypeID: 2,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 45 DAY)"),
+          quota: 180,
+          amount: 8500,
+          days: 45,
+          active: true,
+          userID: 1,
+          saletypeID: 2,
+        },
+
+        // saletypeID = 3
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 30 DAY)"),
+          quota: 90,
+          amount: 4000,
+          days: 30,
+          active: true,
+          userID: 1,
+          saletypeID: 3,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 60 DAY)"),
+          quota: 180,
+          amount: 9000,
+          days: 60,
+          active: true,
+          userID: 1,
+          saletypeID: 3,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 45 DAY)"),
+          quota: 135,
+          amount: 6750,
+          days: 45,
+          active: true,
+          userID: 1,
+          saletypeID: 3,
+        },
+
+        // saletypeID = 4
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 30 DAY)"),
+          quota: 110,
+          amount: 4800,
+          days: 30,
+          active: true,
+          userID: 1,
+          saletypeID: 4,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 60 DAY)"),
+          quota: 210,
+          amount: 9800,
+          days: 60,
+          active: true,
+          userID: 1,
+          saletypeID: 4,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 45 DAY)"),
+          quota: 160,
+          amount: 8200,
+          days: 45,
+          active: true,
+          userID: 1,
+          saletypeID: 4,
+        },
+
+        // saletypeID = 5
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 30 DAY)"),
+          quota: 130,
+          amount: 6000,
+          days: 30,
+          active: true,
+          userID: 1,
+          saletypeID: 5,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 60 DAY)"),
+          quota: 230,
+          amount: 11000,
+          days: 60,
+          active: true,
+          userID: 1,
+          saletypeID: 5,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 45 DAY)"),
+          quota: 180,
+          amount: 8800,
+          days: 45,
+          active: true,
+          userID: 1,
+          saletypeID: 5,
+        },
+
+        // saletypeID = 6
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 30 DAY)"),
+          quota: 140,
+          amount: 6500,
+          days: 30,
+          active: true,
+          userID: 1,
+          saletypeID: 6,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 60 DAY)"),
+          quota: 240,
+          amount: 11500,
+          days: 60,
+          active: true,
+          userID: 1,
+          saletypeID: 6,
+        },
+        {
+          start_date: knex.raw("CURRENT_TIMESTAMP"),
+          end_date: knex.raw("DATE_ADD(CURRENT_TIMESTAMP, INTERVAL 45 DAY)"),
+          quota: 190,
+          amount: 9200,
+          days: 45,
+          active: true,
+          userID: 1,
+          saletypeID: 6,
+        },
+      ]);
+    });
+};

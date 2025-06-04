@@ -1,0 +1,447 @@
+exports.seed = function(knex) {
+    return knex('terminal_entities').del()
+        .then(function () {
+            return knex('terminal_entities').insert([
+                {
+                    t_guid: 'ce66334e-8e7e-49ec-bade-7c43277c6555',
+                    name: 'Terminal Entity 1',
+                    description: 'Descripción de la entidad terminal 1',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 1,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'c7462d5d-9537-48a7-b2f1-14b06eebea43',
+                    name: 'Terminal Entity 2',
+                    description: 'Descripción de la entidad terminal 2',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 2,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'a143f5a9-1d9b-4f41-94ac-9297e9f269cc',
+                    name: 'Terminal Entity 3',
+                    description: 'Descripción de la entidad terminal 3',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 3,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'd2f00d44-ff8d-4455-9d9a-bfb9d99c47e7',
+                    name: 'Terminal Entity 4',
+                    description: 'Descripción de la entidad terminal 4',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 4,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'e7bf0b2d-0f3e-4c9d-8e7f-8d23e746a7d7',
+                    name: 'Terminal Entity 5',
+                    description: 'Descripción de la entidad terminal 5',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 5,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'f8b4e8b7-4c4e-45df-b8d7-6d4ee2786bb7',
+                    name: 'Terminal Entity 6',
+                    description: 'Descripción de la entidad terminal 6',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 6,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'ab7b59b1-3cc5-4dc5-bc37-93d77d4c4ecf',
+                    name: 'Terminal Entity 7',
+                    description: 'Descripción de la entidad terminal 7',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 7,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'b63a4a60-8b7a-403d-83da-e90d3c774e77',
+                    name: 'Terminal Entity 8',
+                    description: 'Descripción de la entidad terminal 8',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 8,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'c2f10c19-9f7f-4d45-9e7a-5f2a71a9b9bb',
+                    name: 'Terminal Entity 9',
+                    description: 'Descripción de la entidad terminal 9',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 9,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'd8d5c26b-2b67-47e4-8c92-6d28a9c9b377',
+                    name: 'Terminal Entity 10',
+                    description: 'Descripción de la entidad terminal 10',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 10,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'e2b1c6de-4a7e-4e5b-9d34-7d26b8c6e177',
+                    name: 'Terminal Entity 11',
+                    description: 'Descripción de la entidad terminal 11',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 11,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'f1d7b8d5-5f8e-43b4-87c8-8d57b7c8e177',
+                    name: 'Terminal Entity 12',
+                    description: 'Descripción de la entidad terminal 12',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 12,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'g2d3b4a1-6e7d-49d3-8b67-9d57b9c8f177',
+                    name: 'Terminal Entity 13',
+                    description: 'Descripción de la entidad terminal 13',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 13,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'h1e4d2c5-7f6b-40c4-8e78-9e58a8b8g177',
+                    name: 'Terminal Entity 14',
+                    description: 'Descripción de la entidad terminal 14',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 14,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'i3e1d2b5-8f7a-41c5-8f79-9f59a9c8h177',
+                    name: 'Terminal Entity 15',
+                    description: 'Descripción de la entidad terminal 15',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 15,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'j4d2c1b6-9g8b-42d6-8g80-9g60b8d8i177',
+                    name: 'Terminal Entity 16',
+                    description: 'Descripción de la entidad terminal 16',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 16,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'k5c2d3b7-0h9c-43d7-8h81-9h61c9e9j177',
+                    name: 'Terminal Entity 17',
+                    description: 'Descripción de la entidad terminal 17',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 17,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'l6b3e4c8-1i0d-44d8-8i82-9i62d0f0k177',
+                    name: 'Terminal Entity 18',
+                    description: 'Descripción de la entidad terminal 18',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 18,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'm7a4d5b9-2j1e-45d9-8j83-9j63e1g1l177',
+                    name: 'Terminal Entity 19',
+                    description: 'Descripción de la entidad terminal 19',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 19,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'n8b5c6a0-3k2f-46e0-8k84-9k64f2h2m177',
+                    name: 'Terminal Entity 20',
+                    description: 'Descripción de la entidad terminal 20',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 20,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'o9c6d7b1-4l3g-47f1-8l85-9l65g3i3n177',
+                    name: 'Terminal Entity 21',
+                    description: 'Descripción de la entidad terminal 21',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 21,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'p0d7e8c2-5m4h-48g2-8m86-9m66h4j4o177',
+                    name: 'Terminal Entity 22',
+                    description: 'Descripción de la entidad terminal 22',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 22,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'q1e8f9d3-6n5i-49h3-8n87-9n67i5k5p177',
+                    name: 'Terminal Entity 23',
+                    description: 'Descripción de la entidad terminal 23',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 23,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'r2f9g0e4-7o6j-40i4-8o88-9o68j6l6q177',
+                    name: 'Terminal Entity 24',
+                    description: 'Descripción de la entidad terminal 24',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 24,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 's3g0h1f5-8p7k-41j5-8p89-9p69k7m7r177',
+                    name: 'Terminal Entity 25',
+                    description: 'Descripción de la entidad terminal 25',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 25,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 't4h1i2g6-9q8l-42k6-8q90-9q70l8n8s177',
+                    name: 'Terminal Entity 26',
+                    description: 'Descripción de la entidad terminal 26',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 26,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'u5i2j3h7-0r9m-43l7-8r91-9r71m9o9t177',
+                    name: 'Terminal Entity 27',
+                    description: 'Descripción de la entidad terminal 27',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 27,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'v6j3k4i8-1s0n-44m8-8s92-9s72n0p0u177',
+                    name: 'Terminal Entity 28',
+                    description: 'Descripción de la entidad terminal 28',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 28,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'w7k4l5j9-2t1o-45n9-8t93-9t73o1q1v177',
+                    name: 'Terminal Entity 29',
+                    description: 'Descripción de la entidad terminal 29',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 29,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'x8l5m6k0-3u2p-46o0-8u94-9u74p2r2w177',
+                    name: 'Terminal Entity 30',
+                    description: 'Descripción de la entidad terminal 30',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 30,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'y9m6n7l1-4v3q-47p1-8v95-9v75q3s3x177',
+                    name: 'Terminal Entity 31',
+                    description: 'Descripción de la entidad terminal 31',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 1,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'z0n7o8m2-5w4r-48q2-8w96-9w76r4t4y177',
+                    name: 'Terminal Entity 32',
+                    description: 'Descripción de la entidad terminal 32',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 2,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'a1o8p9n3-6x5s-49r3-8x97-9x77s5u5z177',
+                    name: 'Terminal Entity 33',
+                    description: 'Descripción de la entidad terminal 33',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 3,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'b2p9q0o4-7y6t-40s4-8y98-9y78t6v6a177',
+                    name: 'Terminal Entity 34',
+                    description: 'Descripción de la entidad terminal 34',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 4,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'c3q0r1p5-8z7u-41t5-8z99-9z79u7w7b177',
+                    name: 'Terminal Entity 35',
+                    description: 'Descripción de la entidad terminal 35',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 5,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'd4r1s2q6-9a8v-42u6-8a90-9a80v8x8c177',
+                    name: 'Terminal Entity 36',
+                    description: 'Descripción de la entidad terminal 36',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 6,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'e5s2t3r7-0b9w-43v7-8b91-9b81w9y9d177',
+                    name: 'Terminal Entity 37',
+                    description: 'Descripción de la entidad terminal 37',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 7,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'f6t3u4s8-1c0x-44w8-8c92-9c82x0z0e177',
+                    name: 'Terminal Entity 38',
+                    description: 'Descripción de la entidad terminal 38',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 8,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'g7u4v5t9-2d1y-45x9-8d93-9d83y1a1f177',
+                    name: 'Terminal Entity 39',
+                    description: 'Descripción de la entidad terminal 39',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 9,
+                    association_date: '2024-05-30',
+                    active: true
+                },
+                {
+                    t_guid: 'h8v5w6u0-3e2z-46y0-8e94-9e84z2b2g177',
+                    name: 'Terminal Entity 40',
+                    description: 'Descripción de la entidad terminal 40',
+                    app_param: '{"param1": "value1", "param2": "value2"}',
+                    fee: 10.5,
+                    terminal_category_id: 1,
+                    point_sale_id: 10,
+                    association_date: '2024-05-30',
+                    active: true
+                }
+            ]);
+        });
+};
